@@ -2,16 +2,16 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 export default function PokemonIcon(props) {
-    const {pokemon, index} = props;
+    const {name, id} = props;
     
     return (
-        <Link to= {`/pokemon/${index + 1}`}>
+        <Link to= {`/pokemon/${id}`}>
             <li className= "pokemon-icon column">
-                <img src= {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`} />
+                <img src= {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} />
 
                 <div className= "description column"> 
-                    <h1> {pokemon.name} </h1> 
-                    <h2> #{index + 1} </h2>
+                    <h1> {name} </h1> 
+                    <h2> #{id} </h2>
                 </div>
             </li>
         </Link>

@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function PokemonStats(props) {
-    console.log("Stats", props.pokemonInfo);
     const {weight, height, base_experience, types, abilities} = props.pokemonInfo;
 
     return (

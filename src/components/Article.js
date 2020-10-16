@@ -1,6 +1,7 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 import axios from "axios";
+
 import CurrentPokemon from "./CurrentPokemon";
 import PokemonStats from "./PokemonStats";
 

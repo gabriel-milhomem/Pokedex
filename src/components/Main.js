@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+
 import PokemonIcon from "./PokemonIcon";
 
 export default function Main() {
@@ -18,9 +19,10 @@ export default function Main() {
                     <img className= "loading" src= "./images/loading.gif"
                 />}
 
-                {listPokemon.map((pokemon, i) => (
-                    <PokemonIcon pokemon = {pokemon} index= {i} key= {i} />
-                ))}
+                {listPokemon.map(pokemon => {
+                    const id = pokemon.url.split("/")[6];
+                    return (<PokemonIcon name = {pokemon.name} id= {id} key= {id} />);
+                })}
             </ul>
         </main>
     );
