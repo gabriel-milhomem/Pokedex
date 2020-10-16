@@ -1,5 +1,5 @@
 import React from "react";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 
 import CurrentPokemon from "./CurrentPokemon";
@@ -18,8 +18,8 @@ export default function Article() {
 
     return (
         <article>
-            {(pokemonInfo)
-                ? <>
+            {(pokemonInfo) ?
+                <>
                     <CurrentPokemon pokemonInfo= {pokemonInfo} /> 
                     <PokemonStats pokemonInfo= {pokemonInfo} />
                 </> :

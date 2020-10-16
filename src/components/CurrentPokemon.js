@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
@@ -8,8 +8,9 @@ export default function CurrentPokemon(props) {
 
     return (
         <header className= "current-pokemon line">
-            {(id === 1)
-                ? <div> </div> : 
+            {(id === 1) ?
+                <div> </div> :
+                 
                 <button>
                     <Link to= {`/pokemon/${parseInt(id) - 1}`}> 
                         <FontAwesomeIcon className= "icon" icon= {faChevronLeft} />
@@ -26,8 +27,9 @@ export default function CurrentPokemon(props) {
                 </div>
             </div>    
             
-            {(id === 893)
-                ? <div> </div> : 
+            {(id === 893) ? 
+                <div> </div> :
+
                 <button>  
                     <Link to= {`/pokemon/${parseInt(id) + 1}`}>
                         <FontAwesomeIcon className= "icon" icon= {faChevronRight} />
