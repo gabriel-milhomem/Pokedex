@@ -1,20 +1,18 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import axios from "axios";
 import PokemonIcon from "./PokemonIcon";
 
 export default function Main() {
-    const [listPokemon, setListPokemon] = useState([]);
+    const [listPokemon, setListPokemon] = React.useState([]);
 
-    useEffect(() => {
+    React.useEffect(() => {
         const request = axios.get("https://pokeapi.co/api/v2/pokemon?limit=893");
-        request.then(response => {
-            setListPokemon(response.data.results);
-        });
+        request.then(response => setListPokemon(response.data.results));
     }, []);
 
     return (
         <main>
-            <ul>
+            <ul className= "line">
                 {(listPokemon.length) 
                     ? "":
                     <img className= "loading" src= "./images/loading.gif"

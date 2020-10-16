@@ -1,9 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
-    padding-top: 120px;
+    padding: 120px 15px 30px;
     background: #F2F2F2;
     color: #000000;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .center {
@@ -19,9 +19,20 @@ body {
     justify-content: space-between;
 }
 
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main li, .current-pokemon, .pokemon-stats {
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
 /* Header */
 
-header {
+.top-bar {
     position: fixed;
     height: 85px;
     top: 0px;
@@ -31,48 +42,95 @@ header {
     width: 100%;
 }
 
-header img {
+.top-bar img {
     height: 60px;
     width: 170px;
+    cursor: pointer;
 }
 
 /* Main */
 
-main {
-    padding: 0px 15px 30px;
-}
-
-main ul {
-    display: flex;
-    justify-content: space-between;
+ul {
     flex-wrap: wrap;
 }
 
-main li {
+.pokemon-icon {
     background: #ffffff;
-    border-radius: 20px;
     width: 165px;
     height: 170px;
     margin-bottom: 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 
-main img {
+.pokemon-icon img {
     width: 140px;
     height: 110px;
 }
 
+h2 {
+    font-size: 18px;
+    color: #bcbcbc;
+}
+
 .description {
-    height: 37px;
+    height: 43px;
 }
 
 .loading {
-    width: 280px;
-    height: 240px;
+    width: 200px;
+    height: 150px;
     margin: 0 auto;
 }
 
-main span {
+/* Article */
+
+article {
+    text-align: center;
+}
+
+.next-before {
+    font-size: 100px;
+    font-weight: bold;
     color: #bcbcbc;
+}
+
+.current-pokemon {
+    height: 170px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.current-pokemon .pokemon-icon {
+    margin: 0px;
+}
+
+.pokemon-stats {
+    padding: 30px 20px;
+    background: #ffffff;
+    height: 325px;
+    margin-top: 15px;
+    align-items: flex-start;
+}
+
+.number-stats {
+    width: 100%;
+    height: 55px;
+}
+
+.number-stats div {
+    height: 100%;
+}
+
+.word-stats {
+    height: 80px;
+    align-items: flex-start;
+}
+
+.word-stats ul {
+    height: 50px;
+    align-items: flex-start;
+}
+
+.word-stats li {
+    margin-right: 20px;
 }

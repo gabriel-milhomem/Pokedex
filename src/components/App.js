@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 import Header from "./Header";
 import Main from "./Main";
+import Article from "./Article";
 
 export default function App() {
     return (
@@ -10,12 +11,12 @@ export default function App() {
             <Header />
 
             <Switch>
-                <Route path= "/pokemon">
-                    <Articles />
+                <Route exact path= "/">
+                    <Main />
                 </Route>
 
-                <Route path= "/">
-                    <Main />
+                <Route path= "/pokemon/:id">
+                    <Article />
                 </Route>
             </Switch>
         </BrowserRouter>
