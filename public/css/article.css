@@ -1,0 +1,50 @@
+article, main {
+    text-align: center;
+}
+
+.icon {
+    font-size: 50px;
+    color: #bcbcbc;
+}
+
+.current-pokemon {
+    height: 170px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.current-pokemon .pokemon-icon {
+    margin: 0px;
+}
+
+.pokemon-status {
+    padding: 30px 20px;
+    background: #ffffff;
+    height: 325px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.number-status {
+    width: 100%;
+    height: 55px;
+}
+
+.number-status div {
+    height: 100%;
+}
+
+.word-status {
+    height: 80px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.word-status ul {
+    height: 50px;
+    align-items: flex-start;
+}
+
+.word-status li {
+    margin-right: 15px;
+}

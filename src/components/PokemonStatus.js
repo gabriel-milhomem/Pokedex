@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function PokemonStats(props) {
+export default function PokemonStatus(props) {
     const {weight, height, base_experience, types, abilities} = props.pokemonInfo;
 
     return (
-        <section className= "pokemon-stats column">
-            <div className= "number-stats line">
+        <section className= "pokemon-status column">
+            <div className= "number-status line">
                 <div className= "column">
                     <h2> Peso </h2>
 
@@ -25,7 +25,7 @@ export default function PokemonStats(props) {
                 </div>
             </div>
 
-            <div className= "column word-stats">
+            <div className= "column word-status">
                 <h2> Tipos </h2>
 
                 <ul className= "column">
@@ -33,7 +33,7 @@ export default function PokemonStats(props) {
                 </ul>
             </div>
 
-            <div className= "column word-stats">
+            <div className= "column word-status">
                 <h2> Habilidades </h2>
                 
                 <ul className= "column">
