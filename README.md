@@ -1,4 +1,7 @@
 # Projeto #08 - Pokédex
+# Live link
+https://milhomem-pokedex.netlify.app/ <br>
+Obs: Layout somente mobile 
 
 # Descrição
 
