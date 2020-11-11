@@ -7,19 +7,20 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabriel-milhomem/08-pokedex.git"
+    "url": "git+https://github.com/gabriel-milhomem/Pokedex.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabriel-milhomem/08-pokedex/issues"
+    "url": "https://github.com/gabriel-milhomem/Pokedex/issues"
   },
-  "homepage": "https://github.com/gabriel-milhomem/08-pokedex#readme",
+  "homepage": "https://github.com/gabriel-milhomem/Pokedex",
   "dependencies": {
     "@babel/core": "^7.12.0",
     "@babel/preset-env": "^7.12.0",
